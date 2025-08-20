@@ -2,16 +2,21 @@
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 2em;
+  background-color: #BED9A7;
+  text-align: center;
 }
 
 /* STYLE TEXT */
 h1 {
   font-style: italic;
-  color: #0d9c90;
+  color: #4a4b49;
+  text-align: center;
 }
 
 h2 {
   margin-top: 2em; 
+  text-align: center;
+  color: #4a4b49;
 }
 
 /* STYLE FLEX CONTAINER */
@@ -20,19 +25,41 @@ h2 {
   /* uncomment the next line to center the questions and answers */
   /* justify-content: center; */
   margin-top: 2em;
+  justify-content: center;
 }
   
 /* STYLE FLEX ITEM */
 .answer-choice {
   margin: 5px;
+  background-color: #835c76;
+  padding: 5px;
+  
 }
 
 /* STYLE IMAGES */
 .answer-choice img {
   height: 10em;
+  max-width: 400px;
+  height: 300px;
+  
 }
 
 /* STYLE BUTTON */
 button { 
   margin-top: 5px;
+  background-color: #835c76;
+  border: none;
+  color: #ede8e8;
+  font-size: 16px;
+  padding: 10px 24px;
+  
 }
+
+.credit {
+  color: grey;
+}
+
+a {
+  color: grey;
+}
+
