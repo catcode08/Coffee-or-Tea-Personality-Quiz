@@ -8,15 +8,19 @@ body {
 
 /* STYLE TEXT */
 h1 {
-  font-style: italic;
+  font-family: 'Indie Flower', cursive;
   color: #4a4b49;
   text-align: center;
+  font-size: 40px;
+  font-weight: 900;
 }
 
 h2 {
   margin-top: 2em; 
   text-align: center;
   color: #4a4b49;
+  font-family: 'Indie Flower', cursive;
+ 
 }
 
 /* STYLE FLEX CONTAINER */
@@ -53,13 +57,17 @@ button {
   color: #ede8e8;
   font-size: 16px;
   padding: 10px 24px;
-  cursor: pointer;
+  
 }
 
 button:hover {
   background-color:#dbb3ce;
 }
 
+button:disabled{
+  cursor: not-allowed;
+  color: #dbb3ce
+}
 
 .credit {
   color: grey;
@@ -70,6 +78,9 @@ a {
 }
 
 p {
+  font-family: 'Indie Flower', cursive;
   color:#474a45
+  font-size: 20px;
+ font-weight: 500;
 }
 
