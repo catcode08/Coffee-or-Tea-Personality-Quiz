@@ -93,6 +93,7 @@ function restartquestionCount() {
   questionCount = 0;
   teaScore = 0;
   coffeeScore = 0;
+  enableQuestions();
 }
 
 
