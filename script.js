@@ -92,9 +92,9 @@ button.addEventListener("click", restartquestionCount);
 function restartquestionCount() {
   document.getElementById("restart").innerHTML = "restart";
   result.innerHTML = "You are a..."
-  quetioncount = 0;
+  questionCount = 0;
   teaScore = 0;
-  coffee = 0;
+  coffeeScore = 0;
 }
 
 
