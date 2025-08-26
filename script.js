@@ -44,7 +44,6 @@ function tea() {
   console.log("questionCount = " + questionCount + " teaScore = " + teaScore);
   if (questionCount == 4) {
     console.log("The quiz is done!")
-    updateResult();
   }
 }
 
@@ -54,7 +53,6 @@ function coffee() {
   console.log("questionCount = " + questionCount + " coffeeScore = " + coffeeScore);
   if (questionCount == 4) {
     console.log("The quiz is done!")
-    updateResult();
   }
 }
 
