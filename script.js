@@ -8,6 +8,9 @@ var result = document.getElementById("result");
 
 var restart = document.getElementById("restart");
 
+var displayResult = document.getElementById("displayResult");
+
+
 var q1a1 = document.getElementById("q1a1");
 var q1a2 = document.getElementById("q1a2");
 
@@ -34,6 +37,7 @@ q4a1.addEventListener("click", coffee);
 q4a2.addEventListener("click", tea);
 
 
+
 function tea() {
   teaScore += 1;
   questionCount += 1;
@@ -54,6 +58,7 @@ function coffee() {
   }
 }
 
+
 function updateResult() {
   if (teaScore >= 3) {
     result.innerHTML = "You are a tea drinker!";
@@ -67,14 +72,29 @@ function updateResult() {
   }
 }
 
+var button = document.getElementById("displayResult");
+button.addEventListener("click", display);
+ function display() {
+   if (teaScore >= 3) {
+     result.innerHTML = "You are a tea drinker!";
+     console.log("You are a tea drinker!");
+   } else if (coffeeScore >= 3) {
+     result.innerHTML = "You are a coffee drinker!";
+     console.log("You are a coffee drinker!");
+   } else if (teaScore + coffeeScore >= 2) {
+     result.innerHTML = "It's a tie! Try again.";
+     console.log("It's a tie! Try again.")
+   }
+ }
+
 var button = document.getElementById("restart");
 button.addEventListener("click", restartquestionCount);
-function restartquestionCount () {
+function restartquestionCount() {
   document.getElementById("restart").innerHTML = "restart";
-  result.innerHTML = "  You are a..."
-  questionCount = 0;
+  result.innerHTML = "You are a..."
+  quetioncount = 0;
   teaScore = 0;
-  coffeeScore = 0;
+  coffee = 0;
 }
 
 
