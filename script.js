@@ -96,6 +96,53 @@ function restartquestionCount() {
 }
 
 
+q1a1.addEventListener("click", disableQ1);
+q1a2.addEventListener("click", disableQ1);
+
+q2a1.addEventListener("click", disableQ2);
+q2a2.addEventListener("click", disableQ2);
+
+q3a1.addEventListener("click", disableQ3);
+q3a2.addEventListener("click", disableQ3);
+
+q4a1.addEventListener("click", disableQ4);
+q4a2.addEventListener("click", disableQ4);
+
+
+function disableQ1() {
+  q1a1.disabled = true; 
+  q1a2.disabled = true; 
+}
+
+function disableQ2() {
+  q2a1.disabled = true; 
+  q2a2.disabled = true; 
+}
+
+function disableQ3() {
+  q3a1.disabled = true; 
+  q3a2.disabled = true; 
+}
+
+function disableQ4() {
+  q4a1.disabled = true; 
+  q4a2.disabled = true; 
+}
+
+
+function enableQuestions(){
+  q1a1.disabled = false; 
+  q1a2.disabled = false; 
+  q2a1.disabled = false; 
+  q2a2.disabled = false;
+  q3a1.disabled = false; 
+  q3a2.disabled = false;
+  q4a1.disabled = false; 
+  q4a2.disabled = false;
+  
+}
+
+
 
 
 

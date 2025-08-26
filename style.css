@@ -43,17 +43,23 @@ h2 {
   height: 300px;
   
 }
-
+ 
 /* STYLE BUTTON */
 button { 
+  transition-duration: 0.4s;
   margin-top: 5px;
   background-color: #835c76;
   border: none;
   color: #ede8e8;
   font-size: 16px;
   padding: 10px 24px;
-  
+  cursor: pointer;
 }
+
+button:hover {
+  background-color:#dbb3ce;
+}
+
 
 .credit {
   color: grey;
@@ -63,6 +69,7 @@ a {
   color: grey;
 }
 
-p{
+p {
   color:#474a45
 }
+
